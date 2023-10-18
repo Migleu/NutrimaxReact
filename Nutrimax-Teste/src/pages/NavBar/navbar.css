@@ -30,8 +30,16 @@ nav {
   text-decoration: none;
 }
 
-.logo i {
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 25px;
+    height: 25px;
     margin-right: 5px;
+    margin-bottom: 7px;
 }
 .logo h1{
     font-weight: 800;
