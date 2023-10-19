@@ -1,0 +1,321 @@
+:root {
+  --primary_color: #202020;
+  --secundary_color: #495057;
+}
+
+.footer-link {
+     text-decoration: none;
+}
+   
+   #footer_content {
+     font-family: "Poppins";
+     color: #fff;
+     max-height: 400px;
+     background-color: var(--primary_color);
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     padding: 3rem 3.5rem;
+   }
+   
+   #footer_contacts h1 {
+     margin-bottom: 0.75rem;
+   }
+   
+   #footer_social_media {
+     display: flex;
+     gap: 2rem;
+     margin-top: 1.5rem;
+   } 
+   
+   #footer_social_media .footer-link {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 2.5rem;
+     width: 2.5rem;
+     color: #fff;
+     border-radius: 50%;
+     transition: all 0.4s;
+   }
+   
+   #footer_social_media .footer-link img {
+     width: 1.35rem;    
+   }
+   
+   #footer_social_media .footer-link:hover {
+     opacity: 0.8;
+   }
+   
+   #instagram {
+     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+   }
+   
+   #facebook {
+     background-color: #4267b3;
+   }
+   
+   #whatsapp {
+     background-color: #25d366;
+   }
+   
+   .footer-list {
+     display: flex;
+     flex-direction: column;
+     gap: 0.75rem;
+     list-style: none;
+   }
+   
+   .footer-list .footer-link {
+     color: var(--color-neutral-30);
+     transition: all 0.4s;
+   }
+   
+   .footer-list .footer-link:hover {
+     color: var(--secundary_color);
+   }
+   
+   #footer_subscribe {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+   }
+   
+   #footer_subscribe p {
+     color: #fff;
+   }
+   
+   #input_group {
+     display: flex;
+     align-items: center;
+     color: #000;
+     background-color: #fff;
+     border-radius: 4px;
+   }
+   
+   #input_group input {
+     all: unset;
+     padding: 0.75rem;
+     width: 100%;
+   }
+   
+   #input_group button {
+     background-color: #000;
+     border: none;
+     color: #fff;
+     padding: 0px 1.25rem;
+     font-size: 1.125rem;
+     height: 100%;
+     border-radius: 0px 4px 4px 0px;
+     cursor: pointer;
+     transition: all 0.4s;
+   }
+   
+   #input_group button:hover {
+     opacity: 0.8;
+   }
+   
+   #footer_copyright {
+     display: flex;
+     justify-content: center;
+     background-color: var(--primary_color);
+     font-size: 0.6rem;
+     padding: 1.5rem;
+     font-weight: 100;
+   }
+   
+   
+   
+   .popupNutri {
+     padding: 50px;
+     display: none;
+     position: fixed;
+     min-width: 70%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border-radius: 20px;
+     background-color: white;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+     z-index: 1;
+   }
+   
+   .popupNutri h2 {
+     text-align: center;
+     font-size: 30px;
+     /* border: solid 1px; */
+     margin-bottom: 30px;
+   }
+   
+   .popupNutri form {
+     width: 60%;
+     border: solid 1px;
+     border-radius: 15px;
+     border-top: none;
+     border-bottom: none;
+     justify-content: center;
+     padding: 50px;
+     display: flex;
+     margin-left: 50%;
+     transform: translateX(-50%);
+   }
+   .gp1 {
+     padding: 30px;
+     /* border: solid 1px; */
+     margin-right: 3%;
+   }
+   .gp2 {
+     padding: 30px;
+     /* border: solid 1px; */
+   
+   }
+   .popupNutri form input[type="text"] {
+     border-color: var(--primary_color);
+     margin-top: 10px;
+     padding: 20px;
+     border-radius: 10px;
+   }
+   .popupNutri form input[type="submit"] {
+     color: #fff;
+     font-weight: 600;
+     font-size: 15px;
+     background-color: var(--primary_color);
+     margin-left: 30%;
+     margin-top: 15px;
+     padding: 15px;
+     width: 80%;
+     border-radius: 10px;
+   }
+   .popupNutri form input[type="submit"]:hover {
+     cursor: pointer;
+   }
+   
+   .popup {
+     text-align: center;
+     display: none;
+     position: fixed;
+     min-width: 30%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 20px;
+     border-radius: 20px;
+     background-color: white;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+     z-index: 1;
+   }
+   #fecharPopup {
+     padding: 5px;
+     border-radius: 5px;
+     border: solid 2px #000;
+     background-color: #fff;
+   }
+   
+   @media screen and (max-width: 768px) {
+     #footer_content {
+         grid-template-columns: repeat(2, 1fr);
+         gap: 2rem;
+     }
+   }
+   
+   @media screen and (max-width: 426px) {
+     #footer_content {
+         grid-template-columns: repeat(1, 1fr);
+         padding: 3rem 2rem;
+     }
+   }
+   
+   @media screen and (max-width: 500px) {
+     nav {
+       display: block;
+       text-align: center;
+       justify-content: center;
+     }
+     .nav-itens {
+       display: none;
+     }
+     .mobile-menu {
+       margin: auto;
+       width: 15%;
+       display: block;
+     }
+     .logar {
+   
+     }
+     .inicio .elementos {
+       display: block;
+     }
+     .inicio .elementos .elemento {
+       margin-top: 5%;
+       margin-left: 50%;
+       transform: translateX(-50%);
+     }
+     .container_plano {
+       display: block;
+     }
+     .container_plano .img {
+       display: none;
+     }
+     .container_plano .plano {
+       margin: auto;
+       width: 80%;
+     }
+     .container_plano .balao {
+       width: 100%;
+     }
+     .popup {
+       min-width: 80%;
+     }
+     .footer-list {
+       display: none;
+     }
+     #footer_subscribe {
+       text-align: center;
+     }
+     #input_group {
+       margin: auto;
+       width: 70%;
+       height: 20%;
+     }
+     #footer_copyright {
+       padding-top: 40px;
+     }
+     #footer_contacts {
+       text-align: center;
+     }
+     #footer_social_media {
+       justify-content: center;
+     }
+     .programa_subtitulo {
+       width: 100%;
+       margin-bottom: 5%;
+     }
+     .programa {
+       width: 100%;
+       display: block;
+     }
+     .programa_elementos {
+       margin-top: 25%;
+       width: 80%;
+     }
+     #programa_btn {
+       width: 90%;
+       margin-bottom: 20%;
+     }
+     .container_feedback {
+       width: 100%;
+     }
+     .container_feedback h2 {
+       width: 100%;
+       font-size: 30px;
+       padding-top: 30px;
+     }
+     .feedback {
+       display: block;
+     }
+     .feedback_elemento {
+       width: 80%;
+       margin-top: 10%;
+     }
+   }
+   
+   

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './navbar.css';
 import iconapple from '../../assets/icon.svg';
 import { useNavigate } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({setredirect}) => {
     const navigation = useNavigate();
 
     return ( <>
@@ -14,10 +14,10 @@ const Navbar = () => {
     </div>
     <div className="links">
         <ul className="nav-itens">
-            <li id="inicio" onclick="inicio()"><a href="#">Inicio</a></li>
-            <li id="nutri"><a href="#" onclick="nutricionistaPopup()">Nutricionista</a></li>
-            <li id="calendario" ><a href="#">Calendario</a></li>
-            <li><a href="#" >Dietas</a></li>
+            <li id="inicio" onclick="inicio()"><a href="#" onClick={() => navigation('/')}>Inicio</a></li>
+            <li id="nutri"><a href="#" onClick={() => setredirect(1)}>Nutricionista</a></li>
+            <li id="calendario" ><a href="#" onClick={() => setredirect(2)}>Calendario</a></li>
+            <li><a href="#"  onClick={() => navigation('/dieta')}>Dietas</a></li>
         </ul>
     </div>
     <div className="mobile-menu">
@@ -29,6 +29,8 @@ const Navbar = () => {
        <button className="logar" onClick={() => navigation('/login')}>Logar</button>
     </div>
 </nav>
+
+    {/* {redirect == 3 && <Dieta/>} */}
     </> );
 }
  

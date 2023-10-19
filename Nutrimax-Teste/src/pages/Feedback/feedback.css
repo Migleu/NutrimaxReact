@@ -1,0 +1,9 @@
+.container-all {
+     margin-top: 50px;
+     border: solid 1px;
+}
+
+.comment-input {
+     margin-left: 50%;
+     transform: translateX(-50%);
+}

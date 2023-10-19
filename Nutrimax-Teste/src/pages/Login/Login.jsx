@@ -1,6 +1,11 @@
 import React from 'react';
+import './login.css';
+
+
+
 const Login = () => {
     return ( <>
+    <main>
      <div className="login-container" id="login-container">
             <div className="form-container">
                 <form className="form form-login" action="bancoLogin.php" method="post">
@@ -69,6 +74,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        </main>
     </> );
 }
  
