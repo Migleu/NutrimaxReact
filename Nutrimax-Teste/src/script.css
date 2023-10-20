@@ -3,3 +3,11 @@
 * {
      font-family: "Poppins";
 }
+
+:root {
+     --primary_color: #202020;
+     --secundary_color: #495057;
+
+     --orange_color: #FF8C2E;
+     --orange_secundary_color: #FEDAA9;
+   }

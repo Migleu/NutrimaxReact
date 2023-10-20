@@ -1,0 +1,31 @@
+/* .programa_elementos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  border: 4px solid transparent;
+  border-image-source: linear-gradient(0deg, var(--orange_color), transparent);
+  border-image-slice: 1;
+  animation: moveBorder 5s linear infinite; /* Ajuste a duração conforme necessário */
+} */
+/* 
+@keyframes moveBorder {
+  0% {
+    border-image-source: linear-gradient(0deg, var(--orange_color), transparent);
+  }
+  25% {
+    border-image-source: linear-gradient(90deg, var(--orange_color), transparent);
+  }
+  50% {
+    border-image-source: linear-gradient(180deg, var(--orange_color), transparent);
+  }
+  75% {
+    border-image-source: linear-gradient(270deg, var(--orange_color), transparent);
+  }
+  100% {
+    border-image-source: linear-gradient(0deg, var(--orange_color), transparent);
+  }
+} */

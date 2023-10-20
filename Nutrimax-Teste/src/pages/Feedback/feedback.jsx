@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './feedback.css';
 import Navbar from '../NavBar/navbar';
+import './feedback.css';
 
-function Feedback() {
-  const [comments, setComments] = useState([]);
+function Feedback({comments, setcomment}) {
+  // const [redirect, setRedirect] = useState(0);
   const [newComment, setNewComment] = useState('');
+  const [editIndex, setEditIndex] = useState(null);
 
   const handleCommentChange = (event) => {
     setNewComment(event.target.value);
@@ -12,35 +13,48 @@ function Feedback() {
 
   const handleCommentSubmit = () => {
     if (newComment.trim() !== '') {
-      setComments([...comments, newComment]);
+      if (editIndex !== null) {
+        // Se estiver editando um comentário existente
+        const updatedComments = [...comments];
+        updatedComments[editIndex] = newComment;
+        setcomment(updatedComments);
+        setEditIndex(null);
+      } else {
+        // Se estiver adicionando um novo comentário
+        setcomment([...comments, newComment]);
+      }
       setNewComment('');
     }
   };
 
-  return (
-    <>
-      <Navbar/>
-    <div className="container-all">
+  const handleEditComment = (index) => {
+    setEditIndex(index);
+    setNewComment(comments[index]);
+  };
+
+  const handleDeleteComment = (index) => {
+    const updatedComments = [...comments];
+    updatedComments.splice(index, 1);
+    setcomment(updatedComments);
+  };
+
+  return ( <>
+    <div className="containerAll">
       <div className="comment-input">
         <input
           value={newComment}
           onChange={handleCommentChange}
           placeholder="Digite seu comentário..."
         />
-        <button onClick={handleCommentSubmit}>Enviar</button>
+        <button className="SendBtn" onClick={handleCommentSubmit}>
+          {editIndex !== null ? 'Salvar Edição' : 'Enviar'}
+        </button>
       </div>
 
-      <div className="feedbacksComent">
-        <h2>Comentários</h2>
-        <ul>
-          {comments.map((comment, index) => (
-            <li key={index}>{comment}</li>
-          ))}
-        </ul>
+     
       </div>
-    </div>
-    </>
-  );
+    
+      </>  
+      );
 }
-
 export default Feedback;

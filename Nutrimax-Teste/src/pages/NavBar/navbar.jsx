@@ -9,8 +9,8 @@ const Navbar = ({setredirect}) => {
     return ( <>
     <nav>
     <div className="logo">
-    <img src={iconapple} alt=""/>
-        <h1>NutriMax</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/1880/1880204.png" alt=""/>
+        <h1>Nutri<span>Max</span></h1>
     </div>
     <div className="links">
         <ul className="nav-itens">

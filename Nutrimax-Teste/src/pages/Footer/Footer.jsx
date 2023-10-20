@@ -73,7 +73,7 @@ const Footer = () => {
     </div>
 
     <div id="footer_copyright">
-        <h3>&#169 2023</h3>
+        <h3>&copy; 2023</h3>
     </div>
      
      
