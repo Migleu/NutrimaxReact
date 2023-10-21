@@ -16,11 +16,23 @@ nav {
     list-style: none;
     display: flex;
 }
-.nav-itens>li>a {
-  padding-left: 20px;
-  color: var(--primary_color);
-  text-decoration: none;
+
+.nav-itens>li {
+    list-style: none; 
+    display: inline; 
+    margin: 0; 
+    padding: 10px; 
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.3s; 
+    padding-left: 20px;
+    color: var(--primary_color);
+    text-decoration: none;
 }
+.links .nav-itens li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid orange;
+  }
+
 
 .logo{
     display: flex;

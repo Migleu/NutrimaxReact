@@ -4,6 +4,9 @@ import Dieta from '../pages/Dieta/dieta';
 import Feedback from '../pages/Feedback/feedback';
 import Home from '../pages/Home/Index';
 import Login from '../pages/Login/Login';
+// import Teste from '../pages/testes/popup';
+
+
 
 const Routers = () => {
     return ( 
@@ -13,6 +16,7 @@ const Routers = () => {
             <Route path="/login" element={<Login/>} />
             <Route path="/dieta" element={<Dieta/>} />
             <Route path="/feedback" element={<Feedback/>} />
+            {/* <Route path="/teste" element={<Teste/>} /> */}
         </Routes>
         </BrowserRouter>
      );

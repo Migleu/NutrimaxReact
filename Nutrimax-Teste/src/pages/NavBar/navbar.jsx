@@ -14,10 +14,10 @@ const Navbar = ({setredirect}) => {
     </div>
     <div className="links">
         <ul className="nav-itens">
-            <li id="inicio" onclick="inicio()"><a href="#" onClick={() => navigation('/')}>Inicio</a></li>
-            <li id="nutri"><a href="#" onClick={() => setredirect(1)}>Nutricionista</a></li>
-            <li id="calendario" ><a href="#" onClick={() => setredirect(2)}>Calendario</a></li>
-            <li><a href="#"  onClick={() => navigation('/dieta')}>Dietas</a></li>
+            <li onclick="inicio()"onClick={() => navigation('/')}>Inicio</li>
+            <li onClick={() => setredirect(1)}> Nutricionista</li>
+            <li onClick={() => setredirect(2)}> Calendario</li>
+            <li onClick={() => navigation('/dieta')}> Dietas</li>
         </ul>
     </div>
     <div className="mobile-menu">

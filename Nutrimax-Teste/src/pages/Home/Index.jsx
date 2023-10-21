@@ -3,11 +3,10 @@ import Footer from '../Footer/Footer';
 import Navbar from '../NavBar/navbar';
 import './index.css';
 import { useNavigate } from 'react-router-dom';
-import Teste from './teste';
 import Feedback from '../Feedback/feedback';
 import iconapple from '../../assets/iconApple.svg';
-import iconorange from '../../assets/iconOrange.svg';
 import orangePNG from '../../assets/orange.svg';
+
 
 
 
@@ -30,8 +29,9 @@ const Home = () => {
                     <h2 >- Atinja seus objetivos com Nutrimax -</h2>
                     <img src={iconapple} alt="" />
                 </div>
-
             </div>
+
+            
 
             <div className="container_plano">
                 <div className="plano">
@@ -93,13 +93,16 @@ const Home = () => {
             <div className="container_feedback">
                 <h2>Observe alguns Feedbacks feitos para nosso site!</h2>
                 <div className="feedback">
+                
                     {
                         comments?.map((item, index) => (
                             <div class="feedback_elemento" key={index}>
+                            <div className="bgUser">
                                 <div class="feedback_user">
                                     <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
                                         alt="" />
                                     <h3>Roger Santos</h3>
+                                </div>
                                 </div>
                                 <p>{item}</p>
                                 <img id="stars" src="https://www.tecnonutri.com.br/campanha/15em3/img/tecnonutri/fivestars.png"
@@ -107,8 +110,8 @@ const Home = () => {
                             </div>
                         ))
                     }
-                    <button className="buttonFeedback" onClick={() => setFeedback(1)}>Dar meu feedback</button>
                 </div>
+                    <button id="feedback_btn" onClick={() => setFeedback(1)}>Dar meu feedback</button>
             </div>
         </div>
 
@@ -119,7 +122,12 @@ const Home = () => {
         {feedback == 1 && <Feedback comments={comments} setcomment={setComments} />}
 
 
+
+
     </>);
+
+
+    
 }
 
 export default Home;

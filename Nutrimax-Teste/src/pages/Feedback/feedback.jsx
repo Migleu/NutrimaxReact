@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import Navbar from '../NavBar/navbar';
 import './feedback.css';
+
 
 function Feedback({comments, setcomment}) {
   // const [redirect, setRedirect] = useState(0);
   const [newComment, setNewComment] = useState('');
   const [editIndex, setEditIndex] = useState(null);
+
 
   const handleCommentChange = (event) => {
     setNewComment(event.target.value);
@@ -40,6 +41,7 @@ function Feedback({comments, setcomment}) {
 
   return ( <>
     <div className="containerAll">
+  <div className="btn_fechar"><button>Fechar</button></div>
       <div className="comment-input">
         <input
           value={newComment}
@@ -50,11 +52,9 @@ function Feedback({comments, setcomment}) {
           {editIndex !== null ? 'Salvar Edição' : 'Enviar'}
         </button>
       </div>
-
-     
       </div>
     
-      </>  
-      );
+
+      </>);
 }
 export default Feedback;
