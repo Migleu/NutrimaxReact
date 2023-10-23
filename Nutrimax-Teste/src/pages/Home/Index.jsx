@@ -91,7 +91,7 @@ const Home = () => {
             </div>
 
             <div className="container_feedback">
-                <h2>Observe alguns Feedbacks feitos para nosso site!</h2>
+                <h2>Observe alguns <span>Feedbacks</span> feitos para nosso site!</h2>
                 <div className="feedback">
                 
                     {

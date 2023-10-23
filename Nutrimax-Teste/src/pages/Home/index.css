@@ -182,7 +182,7 @@ input[type='file'] {
 #programa_btn {
   margin-left: 50%;
   padding: 15px;
-  border: 3px solid var(--primary_color);
+  border: 1px solid var(--primary_color);
   border-radius: 30px;
   background: transparent;
   font-size: 20px;
@@ -190,6 +190,7 @@ input[type='file'] {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  opacity: .8;
 }
 
 #programa_btn::before {
@@ -202,7 +203,7 @@ input[type='file'] {
   background: linear-gradient(90deg, transparent, transparent, transparent, var(--orange_color), transparent);
   background-size: 200% 100%;
   background-position: 0;
-  transition: background .5s;
+  transition: background 1s;
   border-radius: inherit;
   z-index: -1;
 }
@@ -211,6 +212,7 @@ input[type='file'] {
   background-position: 200%;
 }
 #programa_btn:hover {
+  opacity: 1;
   border-color: var(--orange_color);
   cursor: pointer;
 }
@@ -223,8 +225,8 @@ input[type='file'] {
   margin-top: 5%;
   margin-bottom: 10%;
   margin-left: 50%;
-  border-top: solid 1px #000;
-  border-bottom: solid 1px #000;
+  border-top: solid 1px var(--orange_color);
+  border-bottom: solid 1px var(--orange_color);
   border-radius: 20px;
   transform: translateX(-50%);
 }
@@ -303,7 +305,7 @@ input[type='file'] {
   margin-top: 50px;
   margin-left: 13rem;
   padding: 15px;
-  border: 3px solid var(--primary_color);
+  border: 1px solid var(--primary_color);
   border-radius: 30px;
   background: transparent;
   font-size: 20px;
@@ -323,7 +325,7 @@ input[type='file'] {
   background: linear-gradient(90deg, transparent, transparent, transparent, var(--orange_color), transparent);
   background-size: 200% 100%;
   background-position: 0;
-  transition: background 0.5s;
+  transition: background 1s;
   border-radius: inherit;
   z-index: -1;
 }
