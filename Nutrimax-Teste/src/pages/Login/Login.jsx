@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import connectionDB from '../../../../api-nutrimax/src/Database/config';
 import './login.css';
 
 const Login = () => {
@@ -10,7 +11,7 @@ const Login = () => {
             <div className="form-container">
                 <form className="form form-login" action="bancoLogin.php" method="post">
                     <a href="./">Voltar</a>
-                    <h2 className="form-title">Entrar com</h2>
+                    <h2 className="form-title">Entrar<span> com</span></h2>
                     <div className="form-social">
                         <a href="#" className="social-icon">
                             <i className="fab fa-facebook-f"></i>
@@ -37,7 +38,7 @@ const Login = () => {
                 
                 <form className="form form-register">
                     <a href="./">Voltar</a>
-                    <h2 className="form-title">Criar Conta</h2>
+                    <h2 className="form-title"><span>Criar</span> Conta</h2>
                     <div className="form-social">
                         <a href="#" className="social-icon">
                             <i className="fab fa-facebook-f"></i>
@@ -51,9 +52,9 @@ const Login = () => {
                     </div>
                     <p className="form-text">ou cadastre seu email</p>
                     <div className="form-input-container">
-                        <input name="nome" type="text" className="form-input" placeholder="Nome" />
-                        <input name="email" type="email" className="form-input" placeholder="Email"/>
-                        <input name="senha" type="password" className="form-input" placeholder="Senha"/>
+                        <input  type="text" className="form-input" placeholder="Nome" />
+                        <input  type="email" className="form-input" placeholder="Email"/>
+                        <input  type="password" className="form-input" placeholder="Senha"/>
                     </div>
                     <button type="button" className="form-button" id="btn-cadastrar">Cadastrar</button>
                     <p className="mobile-text">
