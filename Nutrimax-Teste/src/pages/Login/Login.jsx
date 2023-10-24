@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import connectionDB from '../../../../api-nutrimax/src/Database/config';
+// import connectionDB from '../../../../api-nutrimax/src/Database/config';
 import './login.css';
 
 const Login = () => {
