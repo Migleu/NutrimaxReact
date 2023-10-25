@@ -119,7 +119,7 @@ const Home = () => {
 
 
         <Footer />
-        {feedback == 1 && <Feedback comments={comments} setcomment={setComments} />}
+        {feedback == 1 && <Feedback comments={comments} setcomment={setComments} setfeedback={setFeedback} />}
 
 
 

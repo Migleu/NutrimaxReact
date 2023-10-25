@@ -16,8 +16,8 @@ const Navbar = ({setredirect}) => {
     <div className="links">
         <ul className="nav-itens">
             <li onclick="inicio()"onClick={() => navigation('/')}>Inicio</li>
-            <li onClick={() => setredirect(1)}> Nutricionista</li>
-            <li onClick={() => setredirect(2)}> Calendario</li>
+            <li onClick={() => navigation('/')}> Nutricionista</li>
+            <li onClick={() => navigation('/calendario')}> Calendario</li>
             <li onClick={() => navigation('/dieta')}> Dietas</li>
         </ul>
     </div>

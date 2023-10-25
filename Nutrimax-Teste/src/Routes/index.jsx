@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Calendario from '../pages/Calendario/calendario';
 import Dieta from '../pages/Dieta/dieta';
 import Feedback from '../pages/Feedback/feedback';
 import Home from '../pages/Home/Index';
@@ -16,6 +17,7 @@ const Routers = () => {
             <Route path="/login" element={<Login/>} />
             <Route path="/dieta" element={<Dieta/>} />
             <Route path="/feedback" element={<Feedback/>} />
+            <Route path="/calendario" element={<Calendario/>} />
             {/* <Route path="/teste" element={<Teste/>} /> */}
         </Routes>
         </BrowserRouter>

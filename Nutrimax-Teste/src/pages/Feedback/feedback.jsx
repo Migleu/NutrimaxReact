@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './feedback.css';
 
 
-function Feedback({comments, setcomment}) {
+function Feedback({comments, setcomment, setfeedback}) {
   // const [redirect, setRedirect] = useState(0);
   const [newComment, setNewComment] = useState('');
   const [editIndex, setEditIndex] = useState(null);
@@ -41,7 +41,7 @@ function Feedback({comments, setcomment}) {
 
   return ( <>
     <div className="containerAll">
-  <div className="btn_fechar"><button>Fechar</button></div>
+  <div className="btn_fechar"><button onClick={() => setfeedback(0)}>Fechar</button></div>
       <div className="comment-input">
         <input
           value={newComment}
