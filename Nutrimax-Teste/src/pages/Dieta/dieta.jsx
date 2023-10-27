@@ -1,17 +1,22 @@
 import React from 'react';
+import './dieta.css';
 import Navbar from '../NavBar/navbar';
-import './Dieta.css'
+
 
 const Dieta = () => {
     return ( <>
     <Navbar/>
-    
-    <main>
+    <div className="containerDieta">
         <div className="dieta">
-            <h1>sdsdss</h1>
+            <div className="elementosDieta">
+                <h1>Almoço</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum, quasi obcaecati quam, exercitationem commodi debitis sunt neque sint voluptatum libero dolorem unde molestiae eligendi placeat distinctio dolor? Beatae, quos.</p>
+                <hr />
+                <h2>Jantar</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique natus, fugit atque accusamus voluptatum dolorem nisi dolore, nobis in odio itaque, veniam hic neque ullam tenetur doloribus temporibus doloremque vel.</p>
+            </div>
         </div>
-    </main>
-
+    </div>
     </> );
 }
  

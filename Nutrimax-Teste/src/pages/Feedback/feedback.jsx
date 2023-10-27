@@ -22,6 +22,7 @@ function Feedback({comments, setcomment, setfeedback}) {
         setEditIndex(null);
       } else {
         // Se estiver adicionando um novo comentário
+        setfeedback(0);
         setcomment([...comments, newComment]);
       }
       setNewComment('');

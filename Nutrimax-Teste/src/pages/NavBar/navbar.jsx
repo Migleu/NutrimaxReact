@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import iconNutri from '../../assets/iconNutri.svg';
 
 
-const Navbar = ({setredirect}) => {
+const Navbar = () => {
     const navigation = useNavigate();
 
     return ( <>
@@ -15,17 +15,13 @@ const Navbar = ({setredirect}) => {
     </div>
     <div className="links">
         <ul className="nav-itens">
-            <li onclick="inicio()"onClick={() => navigation('/')}>Inicio</li>
+            <li onClick={() => navigation('/')}>Inicio</li>
             <li onClick={() => navigation('/')}> Nutricionista</li>
             <li onClick={() => navigation('/calendario')}> Calendario</li>
             <li onClick={() => navigation('/dieta')}> Dietas</li>
         </ul>
     </div>
-    <div className="mobile-menu">
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
-    </div>
+    
     <div className="btn">
        <button className="logar" onClick={() => navigation('/login')}>Logar</button>
     </div>

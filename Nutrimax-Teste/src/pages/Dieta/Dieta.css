@@ -1,8 +1,16 @@
-:root {
-  --primary_color: #202020;
-  --secundary_color: #495057;
+.containerDieta {
+  margin: 50px auto;
+  border: solid 1px #000;
 }
 
 .dieta {
-    border:solid 1px ;
+  margin: 50px auto;
+  width: 500px;
+}
+.elementosDieta {
+  text-align: center;
+}
+.elementosDieta hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

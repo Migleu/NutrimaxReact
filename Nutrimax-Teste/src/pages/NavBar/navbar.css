@@ -28,11 +28,11 @@ nav {
     color: var(--primary_color);
     text-decoration: none;
 }
+
 .links .nav-itens li:hover {
     cursor: pointer;
     border-bottom: 2px solid orange;
   }
-
 
 .logo{
     display: flex;
@@ -70,8 +70,8 @@ span {
     transition: .3s background;
     opacity: .9;
 }
-.logar:hover {
+/* .logar:hover {
     opacity: 1;
     background-color: var(--orange_color);
     transition: 1s background;
-}
+} */
