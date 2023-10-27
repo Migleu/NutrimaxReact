@@ -12,10 +12,25 @@ const Dieta = () => {
                 <h1>Almoço</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum, quasi obcaecati quam, exercitationem commodi debitis sunt neque sint voluptatum libero dolorem unde molestiae eligendi placeat distinctio dolor? Beatae, quos.</p>
                 <hr />
+
                 <h2>Jantar</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique natus, fugit atque accusamus voluptatum dolorem nisi dolore, nobis in odio itaque, veniam hic neque ullam tenetur doloribus temporibus doloremque vel.</p>
-            </div>
+                <hr />
+                
+                <h1>Almoço</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum, quasi obcaecati quam, exercitationem commodi debitis sunt neque sint voluptatum libero dolorem unde molestiae eligendi placeat distinctio dolor? Beatae, quos.</p>
+                <hr />
+                
+                <h2>Jantar</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique natus, fugit atque accusamus voluptatum dolorem nisi dolore, nobis in odio itaque, veniam hic neque ullam tenetur doloribus temporibus doloremque vel.</p>
+                <hr />
+
+                <h1>Almoço</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam harum, quasi obcaecati quam, exercitationem commodi debitis sunt neque sint voluptatum libero dolorem unde molestiae eligendi placeat distinctio dolor? Beatae, quos.</p>
+               
+            
         </div>
+    </div>
     </div>
     </> );
 }
