@@ -9,6 +9,17 @@
      border: solid 2px var(--orange_color);
      transform: translate(-50%);
    }
+
+   .popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px;
+    z-index: 999;
+}
+
  
    .calendar {
      position: relative;

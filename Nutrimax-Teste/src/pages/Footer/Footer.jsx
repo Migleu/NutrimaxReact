@@ -28,6 +28,9 @@ const Footer = () => {
                 </a>
             </div>
         </div>
+        <div id="footer-recado">
+            <p>NutriMax oferece planos personalizados, educação nutricional e apoio para ajudar você a atingir seus objetivos de saúde e bem-estar. Juntos, vamos transformar sua vida através de escolhas alimentares conscientes. Junte-se a nós nessa jornada para uma vida mais saudável e feliz.</p>
+        </div>
 
         
 

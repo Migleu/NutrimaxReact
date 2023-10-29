@@ -3,7 +3,9 @@
 * {
      font-family: "Poppins";
      scroll-behavior: smooth;
+     scroll-behavior: smooth;
 }
+
 
 :root {
      --primary_color: #202020;

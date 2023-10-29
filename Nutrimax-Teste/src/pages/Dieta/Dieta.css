@@ -1,5 +1,6 @@
 .containerDieta {
   margin: 50px auto;
+  width: 60rem;
   border: solid 1px #000;
 }
 
@@ -7,10 +8,21 @@
   margin: 50px auto;
   width: 500px;
 }
-.elementosDieta {
+.elementosDieta h1{
   text-align: center;
 }
 .elementosDieta hr {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+li {
+  color: var(--orange_color);
+}
+.alimentos {
+  color: #000;
+  font-weight: 500;
+}
+.medidas {
+  color: #000;
+  font-weight: 600;
 }
