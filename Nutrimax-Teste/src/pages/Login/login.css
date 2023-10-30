@@ -6,6 +6,10 @@
     --icon-color: #F3F3F3;
 }
 
+a>img {
+    width: 20px;
+}
+
 .form-button{
     width: 140px;
     height: 40px;

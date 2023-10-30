@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './calendario.css';
 import arrow from '../../assets/arrow.svg';
 import Navbar from '../NavBar/navbar';
+import TopBar from '../../Componentes/topBar';
 
 function Calendario() {
     const [today, setToday] = useState(new Date());
@@ -121,6 +122,7 @@ function Calendario() {
 
     return (<>
         <Navbar/>
+        <TopBar/>
         <div className="container">
             <div className="left">
                 <div className="calendar">

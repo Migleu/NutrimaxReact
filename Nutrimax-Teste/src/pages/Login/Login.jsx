@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 // import connectionDB from '../../../../api-nutrimax/src/Database/config';
 import './login.css';
+import iconGoogle from '../../assets/iconGoogle.svg';
+import iconFacebook from '../../assets/iconFacebook.svg';
+import iconLinkedin from '../../assets/iconLinkedin.svg';
+
 
 const Login = () => {
     const [state, setState] = useState(0)  
@@ -14,13 +18,13 @@ const Login = () => {
                     <h2 className="form-title">Entrar<span> com</span></h2>
                     <div className="form-social">
                         <a href="#" className="social-icon">
-                            <i className="fab fa-facebook-f"></i>
+                            <img src={iconFacebook} alt="" />
                         </a>
                         <a href="#" className="social-icon">
-                            <i className="fab fa-google"></i>
+                            <img src={iconGoogle} alt="" />
                         </a>
                         <a href="#" className="social-icon">
-                            <i className="fab fa-linkedin-in"></i>
+                        <img src={iconLinkedin} alt="" />
                         </a>
                     </div>
                     <p className="form-text">ou utilize sua conta</p>
@@ -40,14 +44,14 @@ const Login = () => {
                     <a href="./">Voltar</a>
                     <h2 className="form-title"><span>Criar</span> Conta</h2>
                     <div className="form-social">
-                        <a href="#" className="social-icon">
-                            <i className="fab fa-facebook-f"></i>
+                    <a href="#" className="social-icon">
+                            <img src={iconFacebook} alt="" />
                         </a>
                         <a href="#" className="social-icon">
-                            <i className="fab fa-google"></i>
+                            <img src={iconGoogle} alt="" />
                         </a>
                         <a href="#" className="social-icon">
-                            <i className="fab fa-linkedin-in"></i>
+                        <img src={iconLinkedin} alt="" />
                         </a>
                     </div>
                     <p className="form-text">ou cadastre seu email</p>

@@ -1,11 +1,13 @@
 import React from 'react';
 import './dieta.css';
 import Navbar from '../NavBar/navbar';
+import TopBar from '../../Componentes/topBar';
 
 
 const Dieta = () => {
     return ( <>
     <Navbar/>
+    <TopBar/>
     <div className="containerDieta">
         <div className="dieta">
             <div className="elementosDieta">

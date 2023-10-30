@@ -17,7 +17,19 @@ nav {
     display: flex;
 }
 
+
+.active-underline {
+    border-bottom: 2px solid orange;
+}
+
+.liNavbar:hover {
+    cursor: pointer;
+    border-bottom: solid 1px var(--orange_color);
+}
+
+
 .nav-itens>li {
+    cursor: pointer;
     list-style: none; 
     display: inline; 
     margin: 0; 
@@ -29,10 +41,9 @@ nav {
     text-decoration: none;
 }
 
-.links .nav-itens li:hover {
-    cursor: pointer;
-    border-bottom: 2px solid orange;
-  }
+.nav-itens>li:hover {
+    transform: translateY(-0.6px);
+}
 
 .logo{
     display: flex;

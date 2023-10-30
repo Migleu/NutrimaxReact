@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import Footer from '../Footer/Footer';
 import Navbar from '../NavBar/navbar';
+import TopBar from '../../Componentes/topBar.jsx';
 import './index.css';
 import { useNavigate } from 'react-router-dom';
 import Feedback from '../Feedback/feedback';
-import iconapple from '../../assets/iconApple.svg';
 import orangePNG from '../../assets/orange.svg';
+
 
 
 
@@ -22,15 +23,9 @@ const Home = () => {
     return (<>
         <Navbar />
         <div id="container_tudo">
+            <TopBar/>
 
-            <div className="inicio">
-                <div className="container-inicio scrolling-text">
-                    <img src={iconapple} alt="" />
-                    <h2 >- Atinja seus objetivos com Nutrimax -</h2>
-                    <img src={iconapple} alt="" />
-                </div>
-            </div>
-
+            
             
 
             <div className="container_plano">
