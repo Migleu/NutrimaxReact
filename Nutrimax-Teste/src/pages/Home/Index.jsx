@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import Footer from '../Footer/Footer';
 import Navbar from '../NavBar/navbar';
 import TopBar from '../../Componentes/topBar.jsx';
@@ -6,8 +6,8 @@ import './index.css';
 import { useNavigate } from 'react-router-dom';
 import Feedback from '../Feedback/feedback';
 import orangePNG from '../../assets/orange.svg';
-
-
+import limonPNG from '../../assets/limon.svg';
+import whatterMelonPNG from '../../assets/whatterMelon.svg';
 
 
 
@@ -17,7 +17,36 @@ const Home = () => {
     const [redirect, setRedirect] = useState(0);
     const [feedback, setFeedback] = useState(0);
     const navigation = useNavigate();
+    
+    const [imageIndex, setImageIndex] = useState(0);
+    const images = [orangePNG, limonPNG, whatterMelonPNG];
+    
+      const handleClick = () => {
+        // Verifica se o índice da imagem está no final do array e reinicia se for o caso
+        if (imageIndex === images.length - 1) {
+          setImageIndex(0);
+        } else {
+          setImageIndex(imageIndex + 1);
+        }
+      };
 
+
+      useEffect(() => {
+        // Verifica se a imagem é a segunda e atualiza as variáveis de cor CSS
+        if (imageIndex === 1) {
+          document.documentElement.style.setProperty('--principal_color', '#00AF46');
+          document.documentElement.style.setProperty('--secundary_color', '#CCEB71');
+        } else if (imageIndex === 2){
+          // Volte para as cores originais se não for a segunda imagem
+          document.documentElement.style.setProperty('--principal_color', '#e01b33');
+          document.documentElement.style.setProperty('--secundary_color', '#282828');
+        }
+        else {
+            document.documentElement.style.setProperty('--principal_color', '#FF8C2E');
+          document.documentElement.style.setProperty('--secundary_color', '#FEDAA9');
+        }
+      }, [imageIndex]);
+    
     console.log(comments);
 
     return (<>
@@ -45,7 +74,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="img">
-                    <img src={orangePNG} alt="" />
+                <img onClick={handleClick} src={images[imageIndex]} alt="Imagem" />
                 </div>
             </div>
             <hr id="hr" />

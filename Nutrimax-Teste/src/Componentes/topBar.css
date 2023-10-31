@@ -6,7 +6,7 @@
     height: 30px;
     margin-bottom: 50px;
     width: 80rem;
-    background: var(--orange_color);
+    background: var(--principal_color);
     transform: translateX(-50%);
   }
   

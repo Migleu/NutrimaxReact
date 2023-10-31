@@ -9,10 +9,10 @@
 
 :root {
      --primary_color: #202020;
-     --secundary_color: #495057;
+     /* --secundary_color: #495057; */
 
-     --orange_color: #FF8C2E;
-     --orange_secundary_color: #FEDAA9;
+     --principal_color: #FF8C2E;
+     --secundary_color: #FEDAA9;
    }
 
 

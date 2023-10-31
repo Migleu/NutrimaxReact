@@ -5,7 +5,7 @@
   color: #fff;
   border-radius: 10px;
   background-color: #fff;
-  border: solid 2px var(--orange_color);
+  border: solid 2px var(--principal_color);
   transform: translate(-50%);
 }
 
@@ -93,7 +93,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--orange_color);
+  color: var(--principal_color);
   border: 1px solid #00000034;
 }
 
@@ -115,7 +115,7 @@
 
 .calendar .days .day:not(.prev-date, .next-date):hover {
   color: #fff;
-  background-color: var(--orange_color);
+  background-color: var(--principal_color);
 }
 
 .calendar .days .prev-date,
@@ -127,7 +127,7 @@
   position: relative;
   font-size: 32px;
   color: #fff;
-  background-color: var(--orange_color);
+  background-color: var(--principal_color);
 }
 
 .calendar .days .active::before {
@@ -137,7 +137,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 10px 2px var(--orange_color);
+  box-shadow: 0 0 10px 2px var(--principal_color);
 }
 
 .calendar .days .today {
@@ -157,7 +157,7 @@
   height: 6px;
   border-radius: 30px;
   transform: translateX(-50%);
-  background-color: var(--orange_color);
+  background-color: var(--principal_color);
 }
 
 .calendar .days .day:hover.event::after {
@@ -181,7 +181,7 @@
   gap: 5px;
   padding: 0 20px;
   margin-bottom: 20px;
-  color: var(--orange_color);
+  color: var(--principal_color);
 }
 
 .calendar .goto-today .goto {
@@ -189,7 +189,7 @@
   align-items: center;
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid var(--orange_color);
+  border: 1px solid var(--principal_color);
 }
 
 .calendar .goto-today .goto input {
@@ -199,27 +199,27 @@
   border: none;
   border-radius: 5px;
   padding: 0 20px;
-  color: var(--orange_color);
+  color: var(--principal_color);
   border-radius: 5px;
 }
 
 .goto-today button {
   padding: 8px 50px;
-  border: 1px solid var(--orange_color);
+  border: 1px solid var(--principal_color);
   border-radius: 5px;
   background-color: transparent;
-  color: var(--orange_color);
+  color: var(--principal_color);
 }
 
 .goto-today button:hover {
   cursor: pointer;
   color: #fff;
-  background-color: var(--orange_color);
+  background-color: var(--principal_color);
 }
 
 .goto-today .goto button {
   border: none;
-  border-left: 1px solid var(--orange_color);
+  border-left: 1px solid var(--principal_color);
   border-radius: 0;
 }
 
@@ -288,7 +288,7 @@
 }
 
 .events .event:hover {
-  background: linear-gradient(90deg, var(--orange_color), transparent);
+  background: linear-gradient(90deg, var(--principal_color), transparent);
 }
 
 .events .event .title {
@@ -327,7 +327,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0.3;
-  color: var(--orange_color);
+  color: var(--principal_color);
   transform: translateY(-50%);
 }
 
@@ -406,7 +406,7 @@
 }
 
 .add-event-header .close:hover {
-  color: var(--orange_color);
+  color: var(--principal_color);
 }
 
 .add-event-header .title {
@@ -449,11 +449,11 @@
 }
 
 .add-event-body .add-event-input input:focus {
-  border-bottom: 1px solid var(--orange_color);
+  border-bottom: 1px solid var(--principal_color);
 }
 
 .add-event-body .add-event-input input:focus::placeholder {
-  color: var(--orange_color);
+  color: var(--principal_color);
 }
 
 .add-event-footer {
@@ -470,16 +470,16 @@
   outline: none;
   border: none;
   color: #fff;
-  background-color: var(--orange_color);
+  background-color: var(--principal_color);
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 10px;
-  border: 1px solid var(--orange_color);
+  border: 1px solid var(--principal_color);
 }
 
 .add-event-footer .add-event-btn:hover {
   background-color: transparent;
-  color: var(--orange_color);
+  color: var(--principal_color);
 }
 
 /* media queries */

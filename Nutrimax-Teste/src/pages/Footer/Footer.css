@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 20px;       
-  border: 1px solid var(--orange_color);  
+  border: 1px solid var(--principal_color);  
 }
 
 

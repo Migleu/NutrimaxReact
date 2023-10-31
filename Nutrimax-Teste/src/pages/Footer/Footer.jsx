@@ -4,6 +4,9 @@ import instaIcon from '../../assets/instagram_icon.svg';
 import faceIcon from '../../assets/facebook_icon.svg';
 import whatsappIcon from '../../assets/whatsapp_icon.svg';
 import iconNutriWhite from '../../assets/iconNutriWhite.svg'
+import iconFacebook from '../../assets/iconFacebook.svg';
+import iconWhatsapp from '../../assets/iconWhatsapp.svg';
+import iconInstagram from '../../assets/iconInstagram.svg';
 
 const Footer = () => {
      return ( <>
@@ -16,15 +19,15 @@ const Footer = () => {
 
             <div id="footer_social_media">
                 <a href="#" className="footer-link" id="instagram">
-                
+                    <img src={iconInstagram} alt="" />
                 </a>
 
                 <a href="#" className="footer-link" id="facebook">
-                
+                    <img src={iconFacebook} alt="" />
                 </a>
 
                 <a href="#" className="footer-link" id="whatsapp">
-                
+                    <img src={iconWhatsapp} alt="" />
                 </a>
             </div>
         </div>

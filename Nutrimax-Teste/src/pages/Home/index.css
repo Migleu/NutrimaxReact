@@ -30,6 +30,7 @@ input[type='file'] {
   display: flex;
 }
 .img {
+  cursor: help;
   display: flex;
   margin: auto;
   width: 600px;
@@ -47,7 +48,7 @@ input[type='file'] {
   width: 50%;
 }
 .plano span {
-  color: var(--orange_color);
+  color: var(--principal_color);
 }
 .balao {
   margin-left: 3%;
@@ -60,7 +61,7 @@ input[type='file'] {
   /* border: solid 2px var(--primary_color); */
 }
 .balao h1 {
-  color: var(--orange_color);
+  color: var(--principal_color);
   margin-left: 5%;
 }
 .balao p {
@@ -73,7 +74,7 @@ input[type='file'] {
   margin-left: 50%;
   margin-top: 40px;
   margin-bottom: 40px;
-  border: solid 1px var(--orange_color);
+  border: solid 1px var(--principal_color);
   border-radius: 30px;
   transform: translateX(-50%);
 }
@@ -116,7 +117,7 @@ input[type='file'] {
   width: 25%;
   height: 25rem;
   padding: 15px;
-  border: solid 1px var(--orange_color);
+  border: solid 1px var(--principal_color);
   border-radius: 40px;
   margin: auto;
 }
@@ -151,7 +152,7 @@ input[type='file'] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, transparent, transparent, transparent, var(--orange_color), transparent);
+  background: linear-gradient(90deg, transparent, transparent, transparent, var(--principal_color), transparent);
   background-size: 200% 100%;
   background-position: 0;
   transition: background 1s;
@@ -164,7 +165,7 @@ input[type='file'] {
 }
 #programa_btn:hover {
   opacity: 1;
-  border-color: var(--orange_color);
+  border-color: var(--principal_color);
   cursor: pointer;
 }
 
@@ -176,8 +177,8 @@ input[type='file'] {
   margin-top: 5%;
   margin-bottom: 10%;
   margin-left: 50%;
-  border-top: solid 1px var(--orange_color);
-  border-bottom: solid 1px var(--orange_color);
+  border-top: solid 1px var(--principal_color);
+  border-bottom: solid 1px var(--principal_color);
   border-radius: 20px;
   transform: translateX(-50%);
 }
@@ -274,7 +275,7 @@ input[type='file'] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, transparent, transparent, transparent, var(--orange_color), transparent);
+  background: linear-gradient(90deg, transparent, transparent, transparent, var(--principal_color), transparent);
   background-size: 200% 100%;
   background-position: 0;
   transition: background 1s;
@@ -286,7 +287,7 @@ input[type='file'] {
   background-position: 200%;
 }
 #feedback_btn:hover {
-  border-color: var(--orange_color);
+  border-color: var(--principal_color);
   cursor: pointer;
 }
 

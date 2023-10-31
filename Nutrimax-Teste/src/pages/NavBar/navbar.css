@@ -19,12 +19,12 @@ nav {
 
 
 .active-underline {
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid var(--principal_color);
 }
 
 .liNavbar:hover {
     cursor: pointer;
-    border-bottom: solid 1px var(--orange_color);
+    border-bottom: solid 1px var(--principal_color);
 }
 
 
@@ -38,11 +38,12 @@ nav {
     transition: border-bottom 0.3s; 
     padding-left: 20px;
     color: var(--primary_color);
+    opacity: .7;
     text-decoration: none;
 }
 
 .nav-itens>li:hover {
-    transform: translateY(-0.6px);
+   opacity: 1;
 }
 
 .logo{
@@ -51,7 +52,7 @@ nav {
 }
 
 span {
-    color: var(--orange_color);
+    color: var(--principal_color);
 }
 
 .logo img {
@@ -75,7 +76,7 @@ span {
     border: none;
     border-radius: 5px;
     color: #fff;
-    background-color: var(--orange_color);
+    background-color: var(--principal_color);
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: .3s background;
@@ -83,6 +84,6 @@ span {
 }
 /* .logar:hover {
     opacity: 1;
-    background-color: var(--orange_color);
+    background-color: var(--principal_color);
     transition: 1s background;
 } */
