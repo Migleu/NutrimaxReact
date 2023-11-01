@@ -30,7 +30,6 @@ input[type='file'] {
   display: flex;
 }
 .img {
-  cursor: help;
   display: flex;
   margin: auto;
   width: 600px;
@@ -38,9 +37,16 @@ input[type='file'] {
 }
 .img img {
   /* filter: saturate(10); */
+  cursor: help;
   width: 60%; 
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin-left: 5rem;
+  /* transform: translateX(-50%); */
+  transition: all .5s;
+}
+
+.img img:hover {
+  transform: translateX(500px);
+  transform:  rotate3d(10, 50, 10, -20deg);
 }
 .plano {
   text-align: center;

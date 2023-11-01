@@ -32,12 +32,10 @@ const Home = () => {
 
 
       useEffect(() => {
-        // Verifica se a imagem é a segunda e atualiza as variáveis de cor CSS
-        if (imageIndex === 1) {
+         if (imageIndex === 1) {
           document.documentElement.style.setProperty('--principal_color', '#00AF46');
           document.documentElement.style.setProperty('--secundary_color', '#CCEB71');
         } else if (imageIndex === 2){
-          // Volte para as cores originais se não for a segunda imagem
           document.documentElement.style.setProperty('--principal_color', '#e01b33');
           document.documentElement.style.setProperty('--secundary_color', '#282828');
         }

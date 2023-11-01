@@ -17,7 +17,9 @@ nav {
     display: flex;
 }
 
-
+.teste {
+    opacity: 1;
+}
 .active-underline {
     border-bottom: 2px solid var(--principal_color);
 }

@@ -16,6 +16,7 @@ const Navbar = () => {
     <div className="links">
     <ul className="nav-itens">
     <li onClick={() => navigation('/')}>
+        
         Inicio
         {location.pathname === '/' && <div className="active-underline"></div>}
     </li>
