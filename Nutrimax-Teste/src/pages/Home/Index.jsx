@@ -8,6 +8,7 @@ import Feedback from '../Feedback/feedback';
 import orangePNG from '../../assets/orange.svg';
 import limonPNG from '../../assets/limon.svg';
 import whatterMelonPNG from '../../assets/whatterMelon.svg';
+import StarRating from '../Estrelas/starRating';
 
 
 
@@ -51,7 +52,7 @@ const Home = () => {
         <Navbar />
         <div id="container_tudo">
             <TopBar/>
-
+        <StarRating/>
             
             
 

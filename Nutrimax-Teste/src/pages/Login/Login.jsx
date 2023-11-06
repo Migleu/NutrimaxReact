@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 // import connectionDB from '../../../../api-nutrimax/src/Database/config';
 import './login.css';
 import iconGoogle from '../../assets/iconGoogle.svg';
@@ -8,6 +9,7 @@ import iconLinkedin from '../../assets/iconLinkedin.svg';
 
 const Login = () => {
     const [state, setState] = useState(0)  
+    const navigation = useNavigate();
 
     return ( <>
     <main>
