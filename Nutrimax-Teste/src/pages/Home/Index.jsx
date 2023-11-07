@@ -9,6 +9,9 @@ import orangePNG from '../../assets/orange.svg';
 import limonPNG from '../../assets/limon.svg';
 import whatterMelonPNG from '../../assets/whatterMelon.svg';
 import StarRating from '../Estrelas/starRating';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -18,7 +21,7 @@ const Home = () => {
     const [redirect, setRedirect] = useState(0);
     const [feedback, setFeedback] = useState(0);
     const navigation = useNavigate();
-    
+
     const [imageIndex, setImageIndex] = useState(0);
     const images = [orangePNG, limonPNG, whatterMelonPNG];
     
@@ -49,10 +52,10 @@ const Home = () => {
     console.log(comments);
 
     return (<>
+    
         <Navbar />
         <div id="container_tudo">
             <TopBar/>
-        <StarRating/>
             
             
 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import connectionDB from '../../../../api-nutrimax/src/Database/config';
 import './login.css';
 import iconGoogle from '../../assets/iconGoogle.svg';
 import iconFacebook from '../../assets/iconFacebook.svg';
@@ -10,6 +9,12 @@ import iconLinkedin from '../../assets/iconLinkedin.svg';
 const Login = () => {
     const [state, setState] = useState(0)  
     const navigation = useNavigate();
+
+    const [username, setUsername] = useState();
+    const [senha, setSenha] = useState();
+    const handleSubmit = () => {
+        
+    }
 
     return ( <>
     <main>
@@ -31,11 +36,13 @@ const Login = () => {
                     </div>
                     <p className="form-text">ou utilize sua conta</p>
                     <div className="form-input-container">
-                        <input name="email" type="email" className="form-input" placeholder="Email"/>
-                        <input name="senha" type="password" className="form-input" placeholder="Senha"/>
+                        <input onChange={(e) => setUsername(e.target.value)} name="email" type="email" className="form-input" placeholder="Email"/>
+                        <input onChange={(e) => setSenha(e.target.value)} name="senha" type="password" className="form-input" placeholder="Senha"/>
                     </div>
                     <a href="#" className="form-link">Esqueceu a senha?</a> 
-                    <button type="button" className="form-button" id="btn-login">Logar</button>
+
+                    <button type="button" className="form-button" id="btn-login" onClick={() => handleSubmit()}>Logar</button>
+
                     <p className="mobile-text">
                         Não tem conta?
                         <a href="#" onClick={() => setState(state => !state)} >Registre-se</a>

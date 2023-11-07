@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import StarRating from '../Estrelas/starRating';
 import './feedback.css';
 
 
@@ -49,6 +50,7 @@ function Feedback({comments, setcomment, setfeedback}) {
           onChange={handleCommentChange}
           placeholder="Digite seu comentário..."
         />
+        <StarRating/>
         <button className="SendBtn" onClick={handleCommentSubmit}>
           {editIndex !== null ? 'Salvar Edição' : 'Enviar'}
         </button>

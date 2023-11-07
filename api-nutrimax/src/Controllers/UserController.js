@@ -1,6 +1,8 @@
 import connectionDB from "../Database/config.js"
 
 class UserController {
+
+	
     async login(req, res) {
 		const { email, password } = req.body;
 
