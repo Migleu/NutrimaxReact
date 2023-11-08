@@ -4,7 +4,7 @@ import UserController from "../Controllers/UserController.js";
 
 const routes = Router();
 
-routes.get('/', UserController.login)
+routes.post('/', UserController.login)
 routes.post('/register', UserController.register)
 
 

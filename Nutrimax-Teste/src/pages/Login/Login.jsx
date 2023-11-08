@@ -1,26 +1,85 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './login.css';
 import iconGoogle from '../../assets/iconGoogle.svg';
 import iconFacebook from '../../assets/iconFacebook.svg';
 import iconLinkedin from '../../assets/iconLinkedin.svg';
+import { useNavigate } from 'react-router-dom';
+import axios from "axios";
+import './login.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
+import imgSorriso from "../../assets/sorriso.webp"
 
 
 const Login = () => {
     const [state, setState] = useState(0)  
     const navigation = useNavigate();
 
-    const [username, setUsername] = useState();
+    const [email, setEmail] = useState();
     const [senha, setSenha] = useState();
-    const handleSubmit = () => {
-        
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmitLogin = async (event) => {
+        event.preventDefault();
+
+        try {
+            const response = await axios.post("http://localhost:3000/", {
+                email: email,
+                password: senha,
+            });
+
+            if (response.data?.athenticated) {
+                navigation("/");
+            }
+            
+        }  catch (error) {
+            if (error?.response?.status == 401) {
+                alert("Email ou Senha incorreto! Tente novamente.");
+                return;
+            }
+
+            alert("Ocorreu um erro inesperado!");
+        }
     }
 
+
+    const handleSubmitRegister = async (event) => {
+        event.preventDefault();
+        setLoading(true);
+
+        try {
+            const response = await axios.post("http://localhost:3000/", {
+                email: email,
+                password: senha,
+                idade: idade,
+            });
+
+            setLoading(false);
+
+            if (response.data?.athenticated) {
+                alert("Login feito com sucesso");
+            }
+            
+        }  catch (error) {
+            if (error?.response?.status == 401) {
+                alert("Email ou Senha incorreto! Tente novamente.");
+                return;
+            }
+
+            alert("Ocorreu um erro inesperado!");
+        } finally {
+            setLoading(false);
+        }
+    };
+
+
     return ( <>
+
     <main>
+        {loading && <img src={imgSorriso} />}
      <div className={`login-container ${ state == 1 && 'move'}`} id="login-container">
             <div className="form-container">
-                <form className="form form-login" action="bancoLogin.php" method="post">
+
+                <form onSubmit={(event) => handleSubmitLogin(event)} className="form form-login">
                     <a href="./">Voltar</a>
                     <h2 className="form-title">Entrar<span> com</span></h2>
                     <div className="form-social">
@@ -35,13 +94,15 @@ const Login = () => {
                         </a>
                     </div>
                     <p className="form-text">ou utilize sua conta</p>
+
                     <div className="form-input-container">
-                        <input onChange={(e) => setUsername(e.target.value)} name="email" type="email" className="form-input" placeholder="Email"/>
+                        <input onChange={(e) => setEmail(e.target.value)} name="email" type="email" className="form-input" placeholder="Email"/>
                         <input onChange={(e) => setSenha(e.target.value)} name="senha" type="password" className="form-input" placeholder="Senha"/>
                     </div>
-                    <a href="#" className="form-link">Esqueceu a senha?</a> 
 
-                    <button type="button" className="form-button" id="btn-login" onClick={() => handleSubmit()}>Logar</button>
+                    <a href="#" className="form-link">Esqueceu a senha?</a> 
+                    <button type="submit" className="form-button" id="btn-login">Logar</button>
+
 
                     <p className="mobile-text">
                         Não tem conta?
@@ -49,7 +110,7 @@ const Login = () => {
                     </p>
                 </form>
                 
-                <form className="form form-register">
+                <form className="form form-register"  onSubmit={(event) => handleSubmitRegister(event)}>
                     <a href="./">Voltar</a>
                     <h2 className="form-title"><span>Criar</span> Conta</h2>
                     <div className="form-social">

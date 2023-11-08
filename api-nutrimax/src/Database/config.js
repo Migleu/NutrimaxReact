@@ -6,7 +6,7 @@ async function connectionDB() {
             host: "localhost",
             database: "bdnutrimax",
             user: "root",
-            password: "devisate",
+            // password: "devisate",
         });
 
         return connection;

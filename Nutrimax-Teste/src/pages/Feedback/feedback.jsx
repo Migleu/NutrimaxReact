@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import StarRating from '../Estrelas/starRating';
 import './feedback.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
-function Feedback({comments, setcomment, setfeedback}) {
+function Feedback({ comments, setcomment, setfeedback }) {
   // const [redirect, setRedirect] = useState(0);
   const [newComment, setNewComment] = useState('');
   const [editIndex, setEditIndex] = useState(null);
@@ -41,23 +43,32 @@ function Feedback({comments, setcomment, setfeedback}) {
     setcomment(updatedComments);
   };
 
-  return ( <>
+  return (<>
     <div className="containerAll">
-  <div className="btn_fechar"><button onClick={() => setfeedback(0)}>Fechar</button></div>
+
+      <div className="btn_fechar">
+        <FontAwesomeIcon className='arrowLeft' icon={faArrowLeft} /><p onClick={() => setfeedback(0)}>Fechar</p>
+      </div>
+
+      <div className="title">
+        <h1>Deixe seu <span>comentario</span></h1>
+        <p>Escreva no input abaixo o seu feedback em relaação ao nosso site!!</p>
+        <hr />
+      </div>
+
       <div className="comment-input">
-        <input
-          value={newComment}
-          onChange={handleCommentChange}
-          placeholder="Digite seu comentário..."
-        />
-        <StarRating/>
+
+        <input value={newComment} onChange={handleCommentChange} placeholder="Digite seu comentário..."/>
+        <StarRating />
+
         <button className="SendBtn" onClick={handleCommentSubmit}>
           {editIndex !== null ? 'Salvar Edição' : 'Enviar'}
         </button>
-      </div>
-      </div>
-    
 
-      </>);
+      </div>
+    </div>
+
+
+  </>);
 }
 export default Feedback;

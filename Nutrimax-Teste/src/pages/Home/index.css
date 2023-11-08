@@ -231,6 +231,14 @@ input[type='file'] {
   /* border: solid 1px; */
   background-color: #fff;
 }
+.bgUser hr {
+  margin-top: 5px;
+  margin-left: 50%;
+  width: 150px;
+  border: solid 1px;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+}
 .feedback_user {
   margin-top: 5px;
   display: flex;

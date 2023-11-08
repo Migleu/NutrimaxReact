@@ -5,6 +5,7 @@ import Dieta from '../pages/Dieta/dieta';
 import Feedback from '../pages/Feedback/feedback';
 import Home from '../pages/Home/Index';
 import Login from '../pages/Login/Login';
+import Cadastro from '../pages/Cadastro/cadastro';
 // import Teste from '../pages/testes/popup';
 
 
@@ -15,6 +16,7 @@ const Routers = () => {
         <Routes>
             <Route path="/"  element={<Home/>} />
             <Route path="/login" element={<Login/>} />
+            <Route path="/cadastro" element={<Cadastro/>} />
             <Route path="/dieta" element={<Dieta/>} />
             <Route path="/feedback" element={<Feedback/>} />
             <Route path="/calendario" element={<Calendario/>} />

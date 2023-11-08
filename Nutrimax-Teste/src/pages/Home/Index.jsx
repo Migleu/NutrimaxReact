@@ -9,8 +9,7 @@ import orangePNG from '../../assets/orange.svg';
 import limonPNG from '../../assets/limon.svg';
 import whatterMelonPNG from '../../assets/whatterMelon.svg';
 import StarRating from '../Estrelas/starRating';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -129,6 +128,7 @@ const Home = () => {
                                         alt="" />
                                     <h3>Roger Santos</h3>
                                 </div>
+                                    <hr />
                                 </div>
                                 <p>{item}</p>
                                 <img id="stars" src="https://www.tecnonutri.com.br/campanha/15em3/img/tecnonutri/fivestars.png"
