@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
 * {
-     font-family: "Poppins";
-     scroll-behavior: smooth;
-     scroll-behavior: smooth;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-
 :root {
-     --primary_color: #202020;
-     /* --secundary_color: #495057; */
-
-     --principal_color: #FF8C2E;
-     --secundary_color: #FEDAA9;
-   }
-
-
-   
+    --black_color: #202020;
+    --gray_color: #a8a8a862;
+    /* --secundary_color: #495057; */
+    --principal_color: #FF8C2E;
+    --secundary_color: #FEDAA9;
+}

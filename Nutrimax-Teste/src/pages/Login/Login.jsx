@@ -4,7 +4,7 @@ import iconFacebook from '../../assets/iconFacebook.svg';
 import iconLinkedin from '../../assets/iconLinkedin.svg';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
-import './login.css';
+import '../Login/login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import imgSorriso from "../../assets/sorriso.webp"
@@ -13,6 +13,8 @@ import imgSorriso from "../../assets/sorriso.webp"
 const Login = () => {
     const [state, setState] = useState(0)  
     const navigation = useNavigate();
+    
+    const [cadastro, setCadastro] = useState(0);
 
     const [email, setEmail] = useState();
     const [senha, setSenha] = useState();
