@@ -17,7 +17,7 @@ body::-webkit-scrollbar-thumb {
      font-family: "Poppins";
      color: #fff;
      max-height: 400px;
-     background-color: var(--primary_color);
+     background-color: var(--black_color);
      grid-template-columns: repeat(4, 1fr);
      padding: 3rem 3.5rem;
    }
@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {
    #footer_copyright {
      display: flex;
      justify-content: center;
-     background-color: var(--primary_color);
+     background-color: var(--black_color);
      font-size: 0.6rem;
      padding: 1.5rem;
      font-weight: 100;
