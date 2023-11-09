@@ -8,6 +8,9 @@ import Feedback from '../Feedback/feedback';
 import orangePNG from '../../assets/orange.svg';
 import limonPNG from '../../assets/limon.svg';
 import whatterMelonPNG from '../../assets/whatterMelon.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
 
 const Home = () => {
     const [comments, setComments] = useState([]);
@@ -45,6 +48,22 @@ const Home = () => {
     console.log(comments);
 
 
+
+    const renderStars = (rating) => {
+        const stars = [];
+        for (let i = 1; i <= rating; i++) {
+          stars.push(
+            <FontAwesomeIcon key={i} icon={faStar} className="star starFull" />
+          );
+        }
+        for (let i = rating + 1; i <= 5; i++) {
+          stars.push(
+            <FontAwesomeIcon key={i} icon={faStar} className="star starEmpty" />
+          );
+        }
+        return stars;
+      };
+      
     
 
     return (<>
@@ -128,8 +147,9 @@ const Home = () => {
                                     <hr />
                                 </div>
                                 <p>{item?.description}</p>
-                                Avaliations: {item?.rating}
-                                
+                            <div className="starView">
+                                {renderStars(item?.rating)}
+                            </div>
                             </div>
                         ))
                     }

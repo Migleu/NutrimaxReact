@@ -7,9 +7,12 @@ img {
   width: 40px;
 }
 
-.star {
+.starView {
+  margin-bottom: 20px;
+}
 
-  font-size: 25px;
+.star {
+  font-size: 20px;
 }
 
 .starFull{
@@ -253,8 +256,9 @@ input[type='file'] {
 .bgUser hr {
   margin-top: 5px;
   margin-left: 50%;
-  width: 150px;
-  border: solid 1px;
+  width: 17rem;
+  border: solid .5px;
+  border-radius: 50px;
   transform: translateX(-50%);
   margin-bottom: 5px;
 }
