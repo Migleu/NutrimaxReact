@@ -2,6 +2,25 @@ a {
     text-decoration: none;
 }
 
+
+img {
+  width: 40px;
+}
+
+.star {
+
+  font-size: 25px;
+}
+
+.starFull{
+  color: #fcb75d;
+}
+
+.starEmpty{
+  opacity: .5;
+  color: #ccc;
+}
+
 .container-inicio {
   display: flex;
   align-items: center;

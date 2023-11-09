@@ -8,12 +8,6 @@ import Feedback from '../Feedback/feedback';
 import orangePNG from '../../assets/orange.svg';
 import limonPNG from '../../assets/limon.svg';
 import whatterMelonPNG from '../../assets/whatterMelon.svg';
-import StarRating from '../Estrelas/starRating';
-
-
-
-
-
 
 const Home = () => {
     const [comments, setComments] = useState([]);
@@ -49,6 +43,9 @@ const Home = () => {
       }, [imageIndex]);
     
     console.log(comments);
+
+
+    
 
     return (<>
     
@@ -121,18 +118,18 @@ const Home = () => {
                 
                     {
                         comments?.map((item, index) => (
-                            <div class="feedback_elemento" key={index}>
+                            <div className="feedback_elemento" key={index}>
                             <div className="bgUser">
-                                <div class="feedback_user">
+                                <div className="feedback_user">
                                     <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
                                         alt="" />
                                     <h3>Roger Santos</h3>
                                 </div>
                                     <hr />
                                 </div>
-                                <p>{item}</p>
-                                <img id="stars" src="https://www.tecnonutri.com.br/campanha/15em3/img/tecnonutri/fivestars.png"
-                                    alt="" />
+                                <p>{item?.description}</p>
+                                Avaliations: {item?.rating}
+                                
                             </div>
                         ))
                     }
