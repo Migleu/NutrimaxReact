@@ -1,12 +1,9 @@
 import React from 'react';
 import './Footer.css';
-import instaIcon from '../../assets/instagram_icon.svg';
-import faceIcon from '../../assets/facebook_icon.svg';
-import whatsappIcon from '../../assets/whatsapp_icon.svg';
-import iconNutriWhite from '../../assets/iconNutriWhite.svg'
-import iconFacebook from '../../assets/iconFacebook.svg';
-import iconWhatsapp from '../../assets/iconWhatsapp.svg';
-import iconInstagram from '../../assets/iconInstagram.svg';
+import iconNutriWhite from '../../assets/Icons/iconNutriWhite.svg'
+import iconFacebook from '../../assets/Icons/iconFacebook.svg';
+import iconWhatsapp from '../../assets/Icons/iconWhatsapp.svg';
+import iconInstagram from '../../assets/Icons/iconInstagram.svg';
 
 const Footer = () => {
      return ( <>

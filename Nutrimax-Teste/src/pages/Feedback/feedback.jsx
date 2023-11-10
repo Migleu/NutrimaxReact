@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './feedback.css';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import starFulll from '../../assets/iconStar.svg';
-import starVazia from '../../assets/iconStarVazia.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function Feedback({ comments, setcomment, setfeedback }) {
@@ -13,7 +11,7 @@ function Feedback({ comments, setcomment, setfeedback }) {
     rating: 0,
   });
   const [editIndex, setEditIndex] = useState(null);
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(1);
 
   const handleCommentChange = (event) => {
     setNewComment({
@@ -21,6 +19,9 @@ function Feedback({ comments, setcomment, setfeedback }) {
       description: event.target.value,
     });
   };
+
+
+  // const starValid = () => 
 
   const handleCommentSubmit = () => {
     if (newComment.description.trim() !== '') {

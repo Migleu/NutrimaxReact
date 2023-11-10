@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './calendario.css';
 import arrow from '../../assets/arrow.svg';
 import Navbar from '../NavBar/navbar';
+import Footer from '../Footer/footer';
 import TopBar from '../../Componentes/topBar';
 
 function Calendario() {
@@ -149,6 +150,8 @@ function Calendario() {
                 </div>
             </div>
         </div>
+
+        <Footer/>
     </>
     )
 };

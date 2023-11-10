@@ -7,6 +7,7 @@
   background-color: #fff;
   border: solid 2px var(--principal_color);
   transform: translate(-50%);
+  margin-bottom: 50px;
 }
 
 .popup {
@@ -24,7 +25,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   color: #878895;
   border-radius: 5px;
   background-color: #fff;

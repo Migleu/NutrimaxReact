@@ -1,27 +1,35 @@
-import React, { useState, useEffect  } from 'react';
-import Footer from '../Footer/Footer';
-import Navbar from '../NavBar/navbar';
-import TopBar from '../../Componentes/topBar.jsx';
-import './index.css';
-import { useNavigate } from 'react-router-dom';
-import Feedback from '../Feedback/feedback';
-import orangePNG from '../../assets/orange.svg';
-import limonPNG from '../../assets/limon.svg';
-import whatterMelonPNG from '../../assets/whatterMelon.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+// Imports (Importações)
+import React, { useState, useEffect  } from 'react'; 
+import { useNavigate } from 'react-router-dom'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { faStar } from '@fortawesome/free-solid-svg-icons'; 
+
+import './index.css'; // Importa o css
+import Footer from '../Footer/Footer'; //Importa o footer
+import Navbar from '../NavBar/navbar'; //Importa a navBar
+import TopBar from '../../Componentes/topBar.jsx'; // Importa o topBar
+import Feedback from '../Feedback/feedback'; // Importa o feedback
+
+// Imagens
+import orangePNG from '../../assets/Componentes/orange.svg';
+import limonPNG from '../../assets/Componentes/limon.svg';
+import whatterMelonPNG from '../../assets/Componentes/whatterMelon.svg';
 
 
+// Home
 const Home = () => {
-    const [comments, setComments] = useState([]);
-    const [redirect, setRedirect] = useState(0);
-    const [feedback, setFeedback] = useState(0);
-    const navigation = useNavigate();
+    const [comments, setComments] = useState([]); // Comentarios
+    const [redirect, setRedirect] = useState(0); // Redirect
+    const [feedback, setFeedback] = useState(0); // Feedback
+    const navigation = useNavigate(); //Navigate
 
-    const [imageIndex, setImageIndex] = useState(0);
-    const images = [orangePNG, limonPNG, whatterMelonPNG];
+    const [imageIndex, setImageIndex] = useState(0); // Cria um estado inicial para imageIndex
+    const images = [orangePNG, limonPNG, whatterMelonPNG]; // Cria uma lista de imagens
     
+
       const handleClick = () => {
+
         // Verifica se o índice da imagem está no final do array e reinicia se for o caso
         if (imageIndex === images.length - 1) {
           setImageIndex(0);
@@ -31,6 +39,7 @@ const Home = () => {
       };
 
 
+      // Muda a cor base do site depenendo da imagem selecionada
       useEffect(() => {
          if (imageIndex === 1) {
           document.documentElement.style.setProperty('--principal_color', '#00AF46');
@@ -49,6 +58,7 @@ const Home = () => {
 
 
 
+    // Renderizar quantas estrelas o usuario deu
     const renderStars = (rating) => {
         const stars = [];
         for (let i = 1; i <= rating; i++) {

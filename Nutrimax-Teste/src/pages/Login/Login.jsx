@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import iconGoogle from '../../assets/iconGoogle.svg';
-import iconFacebook from '../../assets/iconFacebook.svg';
-import iconLinkedin from '../../assets/iconLinkedin.svg';
+import iconGoogle from '../../assets/Icons/iconGoogle.svg';
+import iconFacebook from '../../assets/Icons/iconFacebook.svg';
+import iconLinkedin from '../../assets/Icons/iconLinkedin.svg';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import '../Login/login.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleNotch } from '@fortawesome/free-solid-svg-icons';
 import imgSorriso from "../../assets/sorriso.webp"
 
 

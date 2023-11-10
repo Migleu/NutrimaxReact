@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './navbar.css';
 import { useNavigate } from 'react-router-dom';
-import iconNutri from '../../assets/iconNutri.svg';
+import iconNutri from '../../assets/Icons/iconNutri.svg';
 
 
 const Navbar = () => {
