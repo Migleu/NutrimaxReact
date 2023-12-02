@@ -5,7 +5,7 @@ import iconLinkedin from '../../assets/Icons/iconLinkedin.svg';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import '../Login/login.css';
-import imgSorriso from "../../assets/sorriso.webp"
+import imgSorriso from "../../assets/Componentes/sorriso.webp"
 
 
 const Login = () => {

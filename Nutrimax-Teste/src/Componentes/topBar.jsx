@@ -1,6 +1,6 @@
 import React from 'react';
 import './topBar.css';
-import iconapple from '../assets/iconapple.svg';
+import iconapple from '../assets/Icons/iconapple.svg';
 
 
 
