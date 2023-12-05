@@ -202,10 +202,10 @@ input[type='file'] {
 .container_feedback {
   text-align: center;
   padding: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   width: 95%;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 350px;
   margin-left: 50%;
   border-top: solid 1px var(--principal_color);
   border-bottom: solid 1px var(--principal_color);
@@ -330,3 +330,27 @@ input[type='file'] {
   cursor: pointer;
 }
 
+.QRcodeContainer {
+  width: 90%;
+  margin-top: -340px;
+  padding: 50px;
+  margin-left: 50%;
+  border-bottom: solid 1px #fff;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  margin-bottom: 100px;
+}
+.QRcodeContainer h1 {
+  color: #000;
+  text-align: center;
+}
+
+.QRcode {
+  margin-top: 50px;
+  margin-left: 40%;
+}
+.QRcode img{
+  border-radius: 15px;
+  border: solid 4px var(--principal_color);
+  width: 250px;
+}
